@@ -4,17 +4,17 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	let numunoT;
-	let numdosT;
-    let numuno;
-	let numdos;
+	let numUnoT;
+	let numDosT;
+    let numUno;
+	let numDos;
 	let mensaje;
-	numunoT= document.getElementById ("txtIdNumeroUno").value;
-    numdosT = document.getElementById ("txtIdNumeroDos").value;
+	numUnoT= document.getElementById ("txtIdNumeroUno").value;
+    numDosT = document.getElementById ("txtIdNumeroDos").value;
 	
-   numuno= parseInt (numunoT);
-   numdos = parseInt (numdosT);
-   mensaje = " La suma es " + ( numuno + numdos );
+   numUno= parseInt (numUnoT);
+   numDos = parseInt (numDosT);
+   mensaje = " La suma es " + ( numUno + numDos );
 	
 	
 	alert(mensaje);
