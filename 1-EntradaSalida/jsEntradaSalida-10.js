@@ -14,7 +14,7 @@ function mostrarAumento()
 	// para calcular un % tengo q multiplicar el valor por el porcentaje y lo divido por cien
 	
 	
-	importe = parseFloat ( document.getElementById ("txtIdSueldo").value);
+	importe = parseFloat ( document.getElementById ("txtIdImporte").value);
 	
 	
 	descuento = importe * 25 / 100;
