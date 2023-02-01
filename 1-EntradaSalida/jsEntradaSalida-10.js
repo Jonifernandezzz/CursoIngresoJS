@@ -17,9 +17,9 @@ function mostrarAumento()
 	importe = parseFloat ( document.getElementById ("txtIdSueldo").value);
 	
 	
-	Descuento = importe * 25 / 100;
+	descuento = importe * 25 / 100;
 	
-	importefinal = importe - Descuento;
+	importefinal = importe - descuento;
 	
 	
 	
