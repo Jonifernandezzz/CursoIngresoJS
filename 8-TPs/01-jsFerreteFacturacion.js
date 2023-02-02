@@ -5,16 +5,16 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-	let precio1;
-    let precio2;
-    let precio3; 
+	let precioUno;
+    let precioDos;
+    let precioTres; 
     let suma;
 
-    precio1 = parseFloat (document.getElementById ("txtIdPrecioUno").value);
-    precio2 = parseFloat  (document.getElementById ("txtIdPrecioDos").value);
-    precio3 = parseFloat (document.getElementById ("txtIdPrecioTres").value);
+    precioUno = parseFloat (document.getElementById ("txtIdPrecioUno").value);
+    precioDos = parseFloat  (document.getElementById ("txtIdPrecioDos").value);
+    precioTres = parseFloat (document.getElementById ("txtIdPrecioTres").value);
 
-    suma = precio1 + precio2 + precio3;
+    suma = precioUno + precioDos + precioTres;
 
     alert(" la suma es $ " + suma );
 
@@ -23,17 +23,17 @@ function Sumar ()
 }
 function Promedio ()
 {
-    let precio1;
-    let precio2;
-    let precio3; 
+    let precioUno;
+    let precioDos;
+    let precioTres; 
     let suma;
     let promedio;
 
-    precio1 = parseFloat (document.getElementById ("txtIdPrecioUno").value);
-    precio2 = parseFloat  (document.getElementById ("txtIdPrecioDos").value);
-    precio3 = parseFloat (document.getElementById ("txtIdPrecioTres").value);
+    precioUno = parseFloat (document.getElementById ("txtIdPrecioUno").value);
+    precioDos = parseFloat  (document.getElementById ("txtIdPrecioDos").value);
+    precioTres = parseFloat (document.getElementById ("txtIdPrecioTres").value);
     
-    suma = precio1 + precio2 + precio3;
+    suma = precioUno + precioDos + precioTres;
     promedio = suma / 3 ;
     alert(" la suma es $ " + promedio );
 	
@@ -44,18 +44,18 @@ function Promedio ()
 function PrecioFinal ()
 {
 	
-    let precio1;
-    let precio2;
-    let precio3; 
+    let precioUno;
+    let precioDos;
+    let precioTres; 
     let suma;
     let iva;
     let importetotal;
 
-    precio1 = parseFloat (document.getElementById ("txtIdPrecioUno").value);
-    precio2 = parseFloat  (document.getElementById ("txtIdPrecioDos").value);
-    precio3 = parseFloat (document.getElementById ("txtIdPrecioTres").value);
+    precioUno = parseFloat (document.getElementById ("txtIdPrecioUno").value);
+    precioDos = parseFloat  (document.getElementById ("txtIdPrecioDos").value);
+    precioTres = parseFloat (document.getElementById ("txtIdPrecioTres").value);
     
-    suma = precio1 + precio2 + precio3;
+    suma = precioUno + precioDos + precioTres;
     iva = suma * 21 / 100;
     importetotal = suma + iva;
     alert(" la suma es $ " + importetotal );

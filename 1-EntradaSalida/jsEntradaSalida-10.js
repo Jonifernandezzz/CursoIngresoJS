@@ -8,18 +8,19 @@ function mostrarAumento()
 
 	let importe;
 	let importefinal;
+	let descuentoAplicado;
 	let descuento;
 	
 	// para calcular el nuevo importe debo sumarle al importe original el Descuento
 	// para calcular un % tengo q multiplicar el valor por el porcentaje y lo divido por cien
 	
-	
+    descuento = -25;
 	importe = parseFloat ( document.getElementById ("txtIdImporte").value);
 	
 	
-	descuento = importe * 25 / 100;
+	descuentoAplicado = importe * descuento / 100;
 	
-	importefinal = importe - descuento;
+	importefinal = importe + descuentoAplicado;
 	
 	
 	
