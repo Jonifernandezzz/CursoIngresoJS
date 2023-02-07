@@ -11,10 +11,7 @@ function mostrar()
 	alert(" usted es mayor de edad ");
 }
 
-else 
-{
-	alert(" usted es menor de edad ");
-}
+
 
 	
 
