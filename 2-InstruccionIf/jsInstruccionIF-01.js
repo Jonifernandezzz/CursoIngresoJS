@@ -2,6 +2,7 @@
 function mostrar()
 {
 	
+
 	
  let edad;
  
