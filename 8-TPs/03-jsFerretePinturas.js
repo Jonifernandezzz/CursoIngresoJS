@@ -11,16 +11,27 @@ function FahrenheitCentigrados ()
 let fahr;
 let centidrados;
 
+
 fahr = document.getElementById ("txtIdTemperatura").value;
 fahr = parseFloat(fahr);
 centidrados = (fahr  - 32) * 5/9;
 
-alert(fahr + " Fahrenheit son : " + centidrados);
+alert(fahr + " Fahrenheit son : " + centidrados + " Centigrados " );
 
 
 }
 
 function CentigradosFahrenheit () 
 {
-	
+  let fahr;
+  let centigrados;
+
+
+    centigrados = document.getElementById ("txtIdTemperatura").value;
+    centigrados = parseFloat(centigrados);
+    fahr = centigrados * 5/9 + 32;
+    
+    alert(centigrados + " Centigrados son : " + fahr + " Fahrenheit " ) ;
+    
+    
 }
