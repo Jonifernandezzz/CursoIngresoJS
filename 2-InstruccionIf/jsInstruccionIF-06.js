@@ -20,7 +20,7 @@ else
 	mensaje = " es adolescente "
 }
 	else {
-    mensaje = " es menor de edad"
+    mensaje = " es un niño "
 
 }
 
