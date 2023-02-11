@@ -19,6 +19,8 @@ let precioFinal;
 let precioConDescuento;
 let descuentoAplicado;
 let importeFinal;
+let impuesto;
+let precioImpuesto;
 
 precio = 35;
 descuento = 50;
@@ -27,89 +29,56 @@ descuento = 50;
 cantidad = parseInt(document.getElementById("txtIdCantidad").value);
 marca = document.getElementById("Marca").value;
 
-if(cantidad>= 6)
+if(cantidad > 5)
 {
-  precioFinal = precio * cantidad;
-  descuentoAplicado = precioFinal * descuento/100;
-  precioConDescuento = precioFinal - descuentoAplicado;
-  
-  //precio final = total - descuento;
-   
-  // mensaje = total;
-
-  document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
+  descuento = 50;
+}else if (cantidad==5)
+{
+  if (marca=="ArgentinaLuz"){
+   descuento = 40;
+  }
+  else{
+    descuento =30;
+  }
 }
-else if (cantidad==5 && marca == "ArgentinaLuz")
+else if (cantidad==4)
 {
-    descuento = 40;
-    precioFinal = precio * cantidad;
-    descuentoAplicado = precioFinal * descuento/100;
-    precioConDescuento = precioFinal - descuentoAplicado;
-    
-
-document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
+   if (marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+{
+   descuento =25;
 }
-else if (cantidad==5 && marca != "ArgentinaLuz")
+   else {
+    descuento =20;
+   }
+}else if (cantidad==3) 
 {
-    descuento = 30;
-    precioFinal = precio * cantidad;
-    descuentoAplicado = precioFinal * descuento/100;
-    precioConDescuento = precioFinal - descuentoAplicado;
-    
-
-document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
+   if (marca == "ArgentinaLuz") {
+    descuento =15;
+   }
+   else if (marca == "FelipeLamparas") {
+    descuento =10;
+   }
+   else {
+    descuento =5;
+   }
 }
-else if (cantidad ==4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas")
-{
-    descuento = 25;
-    precioFinal = precio * cantidad;
-    descuentoAplicado = precioFinal * descuento/100;
-    precioConDescuento = precioFinal - descuentoAplicado;
-    
 
-document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
 
-}
-else if (cantidad==4 && marca != "ArgentinaLuz" || marca != "Felipelamparas")
 
-{
-    descuento = 20;
-    precioFinal = precio * cantidad;
-    descuentoAplicado = precioFinal * descuento/100;
-    precioConDescuento = precioFinal - descuentoAplicado;
-
-    document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
-
-}
- 
- if (cantidad==3 && marca == "ArgentinaLuz")
-{
-descuento = 15;
+//cuentas para el descuento
 precioFinal = precio * cantidad;
 descuentoAplicado = precioFinal * descuento/100;
 precioConDescuento = precioFinal - descuentoAplicado;
 
-document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
-
-}
-
-else if (cantidad==3 && marca == "FelipeLamparas")
+//condicion si el precio final supera los $120
+if (precioConDescuento >= 120) 
 {
-descuento = 10;
-precioFinal = precio * cantidad;
-descuentoAplicado = precioFinal * descuento/100;
-precioConDescuento = precioFinal - descuentoAplicado;
-
-document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
-
+impuesto = precioConDescuento * 10 / 100;
+precioImpuesto = precioConDescuento + impuesto;
 }
+alert( " Usted pago $" + precioImpuesto + " de IIBB, siendo $" + impuesto + " el impuesto q se pago. ")
 
-else if (cantidad==3 && marca != "Argentinaluz" || marca != "FelipeLamparas")
-{
-descuento = 5;
-precioFinal = precio * cantidad;
-descuentoAplicado = precioFinal * descuento/100;
-precioConDescuento = precioFinal - descuentoAplicado;
+//pongo los resultadoa en la caja de precios con descuento
 
 document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
 
@@ -118,8 +87,3 @@ document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
 
 
 
-
-
-
-
-}
