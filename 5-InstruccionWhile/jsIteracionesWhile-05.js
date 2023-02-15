@@ -4,30 +4,25 @@ Al presionar el botón pedir un sexo
 function mostrar()
 {
 	let sexoIngresado;
-	let respuesta;
-	sexoIngresado = prompt("ingrese f ó m .");
-	
+	let mensaje;
 
+	sexoIngresado = prompt("ingrese f ó m segun cual sea su genero.");
 	
-
-	
-
-	while(respuesta == f || respuesta == m )
+	while(!isNaN(sexoIngresado) && sexoIngresado != "f" && sexoIngresado != "F" && sexoIngresado != "M" && sexoIngresado != "m" )
 
 	{
-     if(respuesta==f)
-	 { 
-		mensaje = "Usted es de sexo femenino";
-
-	 }
-	 else(respuesta==m)
-	 {
-	    mensaje = "Usted es de sexo masculino";
-	 }
+     sexoIngresado = prompt("Error, ingrese f para femenino o m para masculino");
 	 
 	}
-	document.getElementById("txtIdNumero").value = sexoIngresado;
 
+	if(sexoIngresado == "f" || sexoIngresado == "F")
+	 { 
+		sexoIngresado = " Femenino ";
 
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+	 }
+	 else{
+	    sexoIngresado = " Masculino ";
+	 }
+	mensaje = "Su sexo es " + sexoIngresado;
+	document.getElementById("txtIdSexo").value = mensaje;
+	  }
