@@ -13,14 +13,12 @@ mes = document.getElementById("txtIdMes").value;
 	   case "Febrero" :
 		alert("tiene 28 dias");
 		break;
-
 	   case "Abril" :	
 	   case "Junio" :	
 	   case "Septiembre" :  
 	   case "Noviembre" :
 		alert("tienen 30 dias")
 		break;
-
 	   default:
 	    alert("tiene 31 dias")
         break;

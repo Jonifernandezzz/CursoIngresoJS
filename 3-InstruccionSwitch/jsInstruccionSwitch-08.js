@@ -2,23 +2,21 @@
 function mostrar()
 {
 	let destino;
+	let mensaje;
+
 destino = document.getElementById("txtIdDestino").value;
 
 switch(destino){
 	case "Bariloche":
-		alert("Hace frio");
-		break;
-	case "Mar del plata":
-		alert("Hace calor");
+	case "Ushuaia":
+		mensaje= "Hace frio";
 		break;
 	case "Cataratas":
-		alert("Hace calor");
-		break;
-	case "Ushuaia":
-		alert("Hace frio");
+	case "Mar del plata":
+		mensaje= "Hace calor"
 		break;
 }
-
+alert(mensaje);
 
 
 }//FIN DE LA FUNCIÓN
