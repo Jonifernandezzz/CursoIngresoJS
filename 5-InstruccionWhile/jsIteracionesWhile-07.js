@@ -4,12 +4,26 @@ e informar la suma acumulada y el promedio.
 */
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var respuesta;
+	let contador;
+	let acumulador;
+	let respuesta;
+	let numeroIngresado;
+	let numero;
+
 	contador=0;
 	acumulador=0;
-	respuesta='si';
+	respuesta = "si";
+	
+
+	numeroIngresado = prompt("ingrese un numero");
+ 
+	while(isNaN(numeroIngresado))
+
+
+	
+	
+
+
 
 
 	txtIdSuma.value=acumulador;

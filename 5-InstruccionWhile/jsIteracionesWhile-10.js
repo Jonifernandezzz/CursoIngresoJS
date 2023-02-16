@@ -9,21 +9,56 @@ hasta que el usuario quiera, mostrar:
 6-Cantidad de números pares.
 7-Promedio de positivos.
 8-Promedios de negativos.
-9-Diferencia entre positivos y negativos, (positvos-negativos). */
+9-Diferencia entre positivos y negativos, (positvos-negativos). 
+  > y <  */
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	let respuesta;
+	let numeroIngresado;
+	let sumaNegativos;
+	let sumaPositivos;
+	let contadorPositivos;
+	let contadorNegativos;
+	let contadorCeros;
+	let contadorPares;
+	let promedioPositivos;
+	let promedioNegativos;
+	let diferencia;
+	let acumuladorNegativos;
+	
+	//inicializo
+	sumaNegativos = 0;
+    contadorNegativos = 0;
+    
+
+
 
 	respuesta="si";
 
 	while(respuesta=="si")
-	{
+	{   
+		numeroIngresado = prompt("ingrese un numero");  
+		numeroIngresado = parseInt(numeroIngresado);
 		
+		while(isNaN(numeroIngresado))
+		{
+         
+			numeroIngresado = prompt("Error, ingrese otro numero!!");
+        
+      } 
+	 
+	  if(numeroIngresado < 0)
+		{  
+		   sumaNegativos = sumaNegativos + numeroIngresado;
+		   contadorNegativos = contadorNegativos + 1;
+	  }
+	 else if() {
+
+		contadorNegativos = contadorNegativos + 1;
+	 }  
+
 		respuesta=prompt("desea continuar?");
 	}//fin del while
 
 	document.write("la suma de negativos es :"+sumaNegativos);
-}//FIN DE LA FUNCIÓN
