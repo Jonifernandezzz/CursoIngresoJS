@@ -104,36 +104,7 @@ while(respuesta == "si")
 	}
 
 	}
-	/* 
-   else   (numeroMaximo < numeroIngresado);
-   {
-	   numeroMaximo = numeroIngresado;
-   }
-   
-   
-
-   if(numeroIngresado % 2 == 0)
-   {
-    if (banderaDePares == true || menorpar > numeroIngresado)
-	{
-		menorpar = numeroIngresado;
-	}
-
-   }
-   if(numeroIngresado < 0)
-   {
-    if(banderaMayorNegativos == true || numeroIngresado > mayorNegativos)
-	{
-       mayorNegativos = numeroIngresado;
-	}
-
-
-}
-     respuesta = prompt(" Desea guardar otro numero?");
-
-
-
-*/
+	
     respuesta = prompt(" Desea guardar otro numero?");
 }
 
