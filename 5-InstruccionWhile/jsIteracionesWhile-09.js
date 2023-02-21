@@ -45,7 +45,9 @@ function mostrar()
 	document.getElementById("txtIdMinimo").value = numeroMinimo
 }//FIN DE LA FUNCIÓN
 */
-
+/*While 9 bis: Al presionar el botón pedir  números  hasta que el usuario quiera,
+mostrar el número máximo y el número mínimo ingresado.
+El menor de los pares y el mayor de los negativos ...(solo si hay)*/
 function mostrar(){
 
 let numeroMaximo;
