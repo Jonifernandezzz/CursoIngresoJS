@@ -17,7 +17,7 @@ numero = 0;
 }
 */
 
-//FIN DE LA FUNCIÓN
+//FIN DE LA FUNCIÓN 
 
 // While  1 bis - edad y nombre, informar el nombre de la persona mas vieja y la mas joven
 

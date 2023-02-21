@@ -1,6 +1,7 @@
 /*
 Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+'f' para femenino, 'm' para masculino.
+*/
 function mostrar()
 {
 	let sexoIngresado;
@@ -26,3 +27,9 @@ function mostrar()
 	mensaje = "Su sexo es " + sexoIngresado;
 	document.getElementById("txtIdSexo").value = mensaje;
 	  }
+
+
+
+
+  
+

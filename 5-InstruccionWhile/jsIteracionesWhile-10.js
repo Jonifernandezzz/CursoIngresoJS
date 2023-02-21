@@ -25,11 +25,15 @@ function mostrar()
 	let promedioPositivos;
 	let promedioNegativos;
 	let diferencia;
-	let acumuladorNegativos;
+	
 	
 	//inicializo
+	sumaPositivos = 0;
 	sumaNegativos = 0;
+	contadorPositivos = 0;
     contadorNegativos = 0;
+	contadorCeros = 0;
+	contadorPares = 0;
     
 
 
@@ -53,12 +57,33 @@ function mostrar()
 		   sumaNegativos = sumaNegativos + numeroIngresado;
 		   contadorNegativos = contadorNegativos + 1;
 	  }
-	 else if() {
+	 else if(numeroIngresado > 0 ) {
+    
+		sumaPositivos = sumaPositivos + numeroIngresado;
+		contadorPositivos = contadorPositivos + 1;
 
-		contadorNegativos = contadorNegativos + 1;
-	 }  
+	 }else {
+		contadorCeros = contadorCeros + 1;
+	 } 
+	  if (numeroIngresado%2 == 0) {
+        contadorPares = contadorPares + 1;
+	  }
 
 		respuesta=prompt("desea continuar?");
 	}//fin del while
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+	promedioPositivos = sumaPositivos/contadorPositivos;
+	promedioNegativos = sumaNegativos/contadorNegativos;
+	diferencia = sumaPositivos - sumaNegativos;
+
+
+	document.write("la suma de negativos es :"+sumaNegativos+ "<br>");
+	document.write("la suma de positivos es :"+sumaPositivos+ "<br>");
+	document.write("la cantidad de positivos es :"+contadorPositivos+ "<br>");
+	document.write("la cantidad de negativos es :"+contadorNegativos+ "<br>");
+	document.write("la cantidad de ceros es :"+contadorCeros+ "<br>");
+	document.write("la cantidad de pares es :"+contadorPares+ "<br>");
+	document.write("el promedio de los positivos es :"+promedioPositivos+ "<br>");
+	document.write("el promedio de los negativos es :"+promedioNegativos+ "<br>");
+	document.write("la diferencia estre positivos y negativos es :"+diferencia+ "<br>");
+   }
