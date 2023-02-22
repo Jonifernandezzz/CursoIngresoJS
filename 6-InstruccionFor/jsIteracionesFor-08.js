@@ -2,7 +2,27 @@
 function mostrar()
 {
 
+	let contadordivisores;
+	let numero;
+	
 
-	alert("ok");
+	contadordivisores = 0;
+	
+	numero = parseInt(numero);
+	numero = prompt("Ingrese un numero: ")
+	while(isNaN(numero))
+	{
+		numero = prompt("Error, ingrese un numero")
+	}
+
+	for(let i=2; i  < numero; i++)
+	{
+      if(numero%i == 0)
+	  {
+        console.log(numero)
+	  }
+
+    }
+	
 
 }//FIN DE LA FUNCIÓN

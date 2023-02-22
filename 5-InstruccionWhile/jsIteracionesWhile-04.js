@@ -12,7 +12,6 @@ function mostrar()
 	numeroIngresado = parseInt(numeroIngresado);
 
 	while(isNaN(numeroIngresado) || numeroIngresado < -1 || numeroIngresado > 9)
-
 	{
      numeroIngresado = prompt("Error, ingrese un numero entre 0 y 9");
 	 numeroIngresado = parseInt(numeroIngresado);

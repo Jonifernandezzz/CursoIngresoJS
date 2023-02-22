@@ -25,7 +25,11 @@ d) La cantidad de alumnos desaprobados (nota < 4)*/
 
 function mostrar(){
 
-
+ let notaingresada;
+ let sexo;
+ let alumnos;
+ let notastotales;
+ let promediototal;
 
 
 
