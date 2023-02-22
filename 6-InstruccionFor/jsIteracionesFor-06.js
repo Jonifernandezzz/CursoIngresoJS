@@ -10,7 +10,7 @@ function mostrar()
 	numero = parseInt(numero);
 	numero = prompt("Ingrese un numero: ")
 	//hacer una variable q tome los valores desde el 1 hasta el numero ingresado;
-	for(i = 1; i < numero; i++){
+	for(let i = 1; i < numero; i++){
 
 
 	

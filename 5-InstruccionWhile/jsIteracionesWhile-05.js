@@ -21,7 +21,8 @@ function mostrar()
 		sexoIngresado = " Femenino ";
 
 	 }
-	 else{
+	 else
+	 {
 	    sexoIngresado = " Masculino ";
 	 }
 	mensaje = "Su sexo es " + sexoIngresado;

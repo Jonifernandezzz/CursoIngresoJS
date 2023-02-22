@@ -59,56 +59,45 @@ numero = 11;
 }
 */
 
-//while 2 bis bis ingresar numeros hasta que el usuario quiera. determinar la cantidad de numeros q son mayores que 1o y menores a 2. tambien el promedio de los numeros q cumplen la condicion anterior.
+//while 2 bis bis ingresar numeros hasta que el usuario quiera.
+// determinar la cantidad de numeros q son mayores que 1o y menores a 20.
+// tambien el promedio de los numeros q cumplen la condicion anterior.
 
 function mostrar(){
 
 
 	let numeroIngresado;
 	let respuesta;
-	let contadorMayor;
-	let contadorMenor;
-	let contadormayormenor;
-	let sumamayormenor;
+	let contador;
+	let acumulador;
 	let promedio;
 	
-	contadorMayor = 0;
-	contadorMenor = 0;
-	contadormayormenor = 0;
-	numeroIngresado = 0;
-	sumamayormenor = 0;
+	contador = 0;
+	acumulador = 0;
 	respuesta = "si";
 	
-while(respuesta=="si"){
+	while(respuesta=="si"){
 	
 		numeroIngresado = parseInt(numeroIngresado);
 		numeroIngresado = prompt(" Ingrese un numero ");
-	
+		while(isNaN(numeroIngresado)) {
+			numeroIngresado = parseInt(numeroIngresado);
+			numeroIngresado = prompt("Error,  Ingrese un numero ");
+		}
+		if(numeroIngresado >= 10 && numeroIngresado <= 20 )
+		{
+			contador= contador + 1;
+			acumulador = acumulador + numeroIngresado;
+		}
+		
 		respuesta = prompt(" Quiere ingresar otro numero? si/no");
-	
-	
-	if(numeroIngresado > 10)
-	{
-	  contadorMayor= contadorMayor + 1;
-	
-	}else if (numeroIngresado < 20){
-		 
-	   contadorMenor = contadorMenor + 1;
-	}else (numeroIngresado > 10 || numeroIngresado < 20 )
-	{   
-		sumamayormenor = sumamayormenor + numeroIngresado;
-		contadormayormenor = contadormayormenor + 1;
 	}
+
+	promedio = acumulador/contador;
 	
+	document.write("el promedio de los numeros mayores a 10 y menores a 20 es : " + promedio);
 	
-	
-	}
-	 promedio = sumamayormenor / contadormayormenor;
-	
-	
-	 document.write("el promedio de los numeros mayores a 10 y menores a 20 es : " + promedio);
-	
-	}
+}
 
 
 //No me sale bien la cuenta

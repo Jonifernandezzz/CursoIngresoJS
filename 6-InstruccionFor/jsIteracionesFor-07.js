@@ -14,7 +14,7 @@ function mostrar()
 	numero = parseInt(numero);
 	numero = prompt("Ingrese un numero: ")
 	
-	for(i = 1; i < numero; i++){
+	for(let i = 1; i < numero; i++){
 
 
 	
