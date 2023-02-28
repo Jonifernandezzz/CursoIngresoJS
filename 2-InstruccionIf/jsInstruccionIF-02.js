@@ -1,5 +1,5 @@
 //al ingresar una edad debemos informar si es mayor de edad
-
+/*
 function mostrar()
 {
  let edad;
@@ -15,4 +15,20 @@ function mostrar()
 
 	
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/
+
+function mostrar()
+{
+let cont
+
+
+
+
+
+
+
+
+
+
+
+}

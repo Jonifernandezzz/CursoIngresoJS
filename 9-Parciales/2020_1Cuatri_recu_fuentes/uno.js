@@ -120,7 +120,7 @@ function mostrar()
 		  "\nCantidad:" + cantidadJabonCaro + "\nPrecio:" + precioJabonCaro;
 	   }
    
-	   mensajeb = "B- Tipo con mas unidades es:" + mayorTipo + "promedio :" + promedioCompra;
+	   mensajeb = "B- Tipo con mas unidades es: " + mayorTipo + " y el promedio por compra es :" + promedioCompra;
 	   mensajeBarbijo = "C- Unidades de barbijos : " + acumuladorJabon;
 	   
 	   alert(mensajeJabon +  "\n" + mensajeb + "\n" + mensajeBarbijo);
